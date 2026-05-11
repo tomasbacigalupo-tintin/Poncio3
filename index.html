@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poncio | Innovación en la Gestión de Talentos</title>
+  <meta name="description" content="Transformamos la gestión del talento con innovación y estrategia. Selección, consultoría organizacional y formación continua.">
+  <meta name="theme-color" content="#4cabd5">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="c-dot"  aria-hidden="true"></div>
+<div class="c-ring" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"></div>
+<div class="sp-bar" aria-hidden="true"></div>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ══ HEADER ════════════════════════════════════════════════ -->
+<header class="hdr" data-header>
+  <div class="nav w">
+
+    <!-- LOGO — Manual de Identidad Poncio 2026
+         Isologo: píldoras/personas ascendentes púrpura→cian
+         Colores exactos del manual de marca oficial -->
+    <a href="#inicio" aria-label="Poncio — ir al inicio" data-c>
+      <svg class="logo-mark" viewBox="0 0 302 78" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Poncio">
+        <title>Poncio</title>
+        <!-- Col 1: púrpura oscuro, sin cabeza, 52% altura -->
+        <rect x="0"  y="40" width="9"  height="38" rx="4.5" fill="#552664"/>
+        <!-- Col 2: púrpura medio, CON cabeza, 68% -->
+        <circle cx="17.5" cy="31.5" r="4.5" fill="#653387"/>
+        <rect x="13" y="36" width="9"  height="42" rx="4.5" fill="#653387"/>
+        <!-- Col 3: índigo profundo, CON cabeza, 40% -->
+        <circle cx="30.5" cy="53" r="4"   fill="#430088"/>
+        <rect x="26" y="57" width="9"  height="21" rx="4.5" fill="#430088"/>
+        <!-- Col 4: azul marino, sin cabeza, 30% -->
+        <rect x="40" y="55" width="9"  height="23" rx="4.5" fill="#072a96"/>
+        <!-- Col 5: azul medio, CON cabeza, 56% -->
+        <circle cx="57.5" cy="40" r="4.5" fill="#2670ca"/>
+        <rect x="53" y="44" width="9"  height="34" rx="4.5" fill="#2670ca"/>
+        <!-- Col 6: azul claro, MÁS ALTO, CON cabeza, 100% -->
+        <circle cx="71.5" cy="10" r="5.5" fill="#4e7cdd"/>
+        <rect x="66" y="15" width="11" height="63" rx="5.5" fill="#4e7cdd"/>
+        <!-- Col 7: cian, barra alta sin cabeza, 70% -->
+        <rect x="81" y="24" width="9"  height="54" rx="4.5" fill="#4cabd5"/>
+        <!-- Col 8: cian claro, barra corta, 44% -->
+        <rect x="94" y="44" width="9"  height="34" rx="4.5" fill="#82c7e6"/>
+        <!-- Wordmark PONCIO -->
+        <text x="117" y="67"
+          font-family="'Bebas Neue', Impact, sans-serif"
+          font-size="52" letter-spacing="3"
+          class="logo-text">PONCIO</text>
+      </svg>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="nl" href="#nosotros">Nosotros</a>
+      <a class="nl" href="#servicios">Servicios</a>
+      <a class="nl" href="#proceso">Proceso</a>
+      <a class="nl" href="#equipo">Equipo</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:11px">
+      <a class="btn btn-p" href="#contacto" data-mag style="font-size:.71rem;padding:11px 20px" data-c>
+        Hablar con un experto
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="tog" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-tog>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav — hidden by default, shown via JS+CSS at ≤900px -->
+  <div class="nav-pan" data-nav-pan>
+    <a class="nl" href="#nosotros">Nosotros</a>
+    <a class="nl" href="#servicios">Servicios</a>
+    <a class="nl" href="#proceso">Proceso</a>
+    <a class="nl" href="#equipo">Equipo</a>
+    <a class="btn btn-p" href="#contacto">Hablar con un experto →</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-vid" aria-hidden="true">
+    <video class="vid-desk" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.webp">
+      <source src="assets/video/poncio-office-horizontal.mp4" type="video/mp4">
+    </video>
+    <video class="vid-mob" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.webp">
+      <source src="assets/video/poncio-office-vertical.mp4" type="video/mp4">
+    </video>
+    <div class="hero-ov"></div>
+  </div>
+
+  <div class="hero-body w">
+    <div class="hero-grid">
+      <div>
+        <p class="ey" style="animation:fadeUp .8s var(--ease) .2s both">Innovación en la Gestión de Talentos</p>
+
+        <!-- Título cinematográfico: cada palabra se revela por separado -->
+        <h1 class="h-title" aria-label="Transformamos la gestión del talento con innovación y estrategia">
+          <span class="w-wrap"><span class="w-inner" style="--wd:.3s">Transformamos</span></span>&#32;<span class="w-wrap"><span class="w-inner" style="--wd:.38s">la</span></span>&#32;<span class="w-wrap"><span class="w-inner" style="--wd:.46s">gestión</span></span>&#32;<span class="w-wrap"><span class="w-inner" style="--wd:.54s">del</span></span>&#32;<span class="w-wrap"><span class="w-inner" style="--wd:.62s">talento</span></span>
+          <span class="h-sub">con innovación y estrategia.</span>
+        </h1>
+
+        <p class="h-desc">Ayudamos a optimizar, mejorar y transformar organizaciones con soluciones que integran tecnología avanzada y el potencial humano.</p>
+
+        <div class="h-ctas">
+          <a class="btn btn-p" href="#contacto" data-mag data-c>
+            Solicitar asesoramiento
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-g" href="#servicios" data-mag data-c>Ver servicios</a>
+        </div>
+
+        <div class="h-proof">
+          <div class="h-avs" aria-hidden="true">
+            <img src="assets/img/team/equipo_martin_poncio.webp"     alt="" loading="eager" width="28" height="28">
+            <img src="assets/img/team/equipo_guillermina_poncio.webp" alt="" loading="eager" width="28" height="28">
+            <img src="assets/img/team/equipo_silvina_dagum.webp"     alt="" loading="eager" width="28" height="28">
+            <img src="assets/img/team/equipo_pedro_marcon.webp"      alt="" loading="eager" width="28" height="28">
+          </div>
+          +150 empresas acompañadas en gestión del talento
+        </div>
+      </div>
+
+      <div class="h-aside">
+        <div class="h-stat" style="--si:0">
+          <div class="h-stat-n"><span data-n data-t="20" data-pre="+">+0</span></div>
+          <div class="h-stat-l">Años en el mercado</div>
+        </div>
+        <div class="h-stat" style="--si:1">
+          <div class="h-stat-n"><span data-n data-t="150" data-pre="+">+0</span></div>
+          <div class="h-stat-l">Empresas acompañadas</div>
+        </div>
+        <div class="h-stat" style="--si:2">
+          <div class="h-stat-n"><span data-n data-t="98" data-suf="%">0%</span></div>
+          <div class="h-stat-l">Clientes satisfechos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-scroll" aria-hidden="true">
+    <div class="h-scroll-bar"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="mq" aria-hidden="true">
+  <div class="mq-track">
+    <div class="mqi"><strong>+20</strong><span>Años de experiencia</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>+150</strong><span>Empresas acompañadas</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>+500</strong><span>Talentos gestionados</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>98%</strong><span>Clientes satisfechos</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>Selección</strong><span>de Talento</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>Consultoría</strong><span>Organizacional</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>Formación</strong><span>Continua</span><span class="mqi-dot"></span></div>
+    <div class="mqi"><strong>Outplacement</strong><span>Profesional</span><span class="mqi-dot"></span></div>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══════════════════════════════════════════════════ -->
+<section class="sec" id="nosotros">
+  <div class="w">
+    <div class="about-g">
+      <div data-r>
+        <p class="ey">Quiénes somos</p>
+        <h2 class="st">Liderando el futuro del trabajo a través del talento.</h2>
+        <p>Somos especialistas que creemos que las personas son mucho más que recursos: son <strong>TALENTOS</strong>. Colaboramos con un equipo apasionado por el desarrollo humano y organizacional.</p>
+      </div>
+      <div class="mc-g" data-rs>
+        <article class="mc">
+          <span class="chip">Misión</span>
+          <p>Aportar valor a las organizaciones mediante una intervención experta orientada a optimizar, mejorar y transformar procesos, sistemas y recursos.</p>
+        </article>
+        <article class="mc mc-b">
+          <span class="chip chip-v">Visión</span>
+          <p>Ser líderes en la innovación de la gestión del Talento, combinando tecnología con potencial humano para construir una propuesta única de desarrollo organizacional.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="pillars" data-rs>
+      <article class="pillar p-hero">
+        <span class="pn">01</span>
+        <h3>Innovación</h3>
+        <p>Combinamos herramientas tecnológicas con estrategia organizacional para ofrecer soluciones únicas.</p>
+      </article>
+      <article class="pillar">
+        <span class="pn">02</span>
+        <h3>Tecnología</h3>
+        <p>Herramientas digitales que potencian los resultados de la gestión del talento en tiempo real.</p>
+      </article>
+      <article class="pillar">
+        <span class="pn">03</span>
+        <h3>Talento</h3>
+        <p>Identificamos, desarrollamos y retenemos el talento que impulsa el crecimiento de cada organización.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ═══════════════════════════════════════════════ -->
+<section class="sec" id="servicios" style="background:var(--bg1)">
+  <div class="w">
+    <div class="sc" data-r>
+      <p class="ey ey-c">Nuestros servicios</p>
+      <h2 class="st">Soluciones a medida para cada etapa de tu evolución.</h2>
+      <p class="sd">Abordamos los desafíos más complejos en la gestión empresarial con metodología probada y adaptable.</p>
+    </div>
+    <div class="srv-g" data-rs>
+      <article class="srv" data-tilt>
+        <div class="srv-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/><path d="M18 5l2 2 3-4"/></svg></div>
+        <h3>Selección de Talento</h3>
+        <p>Encontramos a los profesionales que tu organización necesita con metodología rigurosa y foco en el fit cultural.</p>
+        <ul class="srv-l">
+          <li>Búsqueda y selección ejecutiva</li>
+          <li>Assessment de competencias</li>
+          <li>Entrevistas por valores</li>
+          <li>Informes de candidatos</li>
+        </ul>
+        <a class="srv-lk" href="#contacto" data-c>Consultar sobre selección →</a>
+      </article>
+      <article class="srv" data-tilt>
+        <div class="srv-ic"><svg viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16V9"/><path d="M12 16V7"/><path d="M16 16v-5"/></svg></div>
+        <h3>Consultoría Organizacional</h3>
+        <p>Diagnosticamos, diseñamos e implementamos soluciones que mejoran la performance, cultura y procesos.</p>
+        <ul class="srv-l">
+          <li>Diagnóstico organizacional</li>
+          <li>Diseño de estructuras y procesos</li>
+          <li>Coaching ejecutivo</li>
+          <li>Intervenciones de cultura</li>
+        </ul>
+        <a class="srv-lk" href="#contacto" data-c>Consultar sobre consultoría →</a>
+      </article>
+      <article class="srv" data-tilt>
+        <div class="srv-ic"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3>Formación Continua</h3>
+        <p>Programas diseñados a medida para desarrollar las competencias que tu equipo necesita hoy y en el futuro.</p>
+        <ul class="srv-l">
+          <li>Programas in-company</li>
+          <li>Capacitaciones por área</li>
+          <li>Liderazgo y habilidades blandas</li>
+          <li>Formatos presenciales y online</li>
+        </ul>
+        <a class="srv-lk" href="#contacto" data-c>Consultar sobre formación →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS ════════════════════════════════════════════════ -->
+<section class="sec" id="proceso">
+  <div class="w">
+    <div class="sc" data-r>
+      <p class="ey ey-c">Nuestro camino hacia la excelencia</p>
+      <h2 class="st">Un proceso probado, iterativo y con metodología clara.</h2>
+      <p class="sd">Para garantizar el éxito de cada intervención.</p>
+    </div>
+    <div class="proc-g" data-proc data-rs>
+      <div class="proc-ln" aria-hidden="true"><span></span></div>
+      <article class="proc-step">
+        <div class="proc-n">01</div>
+        <h3>Diagnóstico</h3>
+        <p>Analizamos la situación actual identificando desafíos, oportunidades y necesidades reales.</p>
+      </article>
+      <article class="proc-step">
+        <div class="proc-n">02</div>
+        <h3>Intervención</h3>
+        <p>Diseñamos e implementamos la solución a medida con metodología ágil orientada a resultados.</p>
+      </article>
+      <article class="proc-step">
+        <div class="proc-n">03</div>
+        <h3>Personalización</h3>
+        <p>Adaptamos cada herramienta al contexto único de tu organización y su cultura.</p>
+      </article>
+      <article class="proc-step">
+        <div class="proc-n">04</div>
+        <h3>Mejora Continua</h3>
+        <p>Medimos, ajustamos y acompañamos para garantizar resultados sostenibles a largo plazo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY ════════════════════════════════════════════════════ -->
+<section class="sec" id="por-que" style="background:var(--bg1)">
+  <div class="w">
+    <div class="why-g">
+      <div class="why-cards" data-rs>
+        <article class="wc"><div class="wc-ic">↯</div><h3>Optimización</h3><p>Diagnóstico claro para priorizar lo que mueve el resultado.</p></article>
+        <article class="wc"><div class="wc-ic">◎</div><h3>Transformación</h3><p>Cambios sostenibles, medibles y alineados con la cultura.</p></article>
+        <article class="wc"><div class="wc-ic">◻</div><h3>Integración</h3><p>Equipos, procesos y tecnología trabajando en sistema.</p></article>
+        <article class="wc"><div class="wc-ic">↗</div><h3>Resultados</h3><p>Intervenciones orientadas a métricas de negocio.</p></article>
+      </div>
+      <div data-r>
+        <p class="ey">Por qué las empresas líderes eligen Poncio</p>
+        <h2 class="st">Conocimiento humano, data analytics y ejecución cercana.</h2>
+        <p>Nuestro enfoque único combina la profundidad del conocimiento humano con herramientas de data analytics para generar decisiones más inteligentes y resultados de impacto real.</p>
+        <ul class="cl">
+          <li>Atención personalizada por todos los directivos</li>
+          <li>Uso de data analytics para decisiones objetivas</li>
+          <li>Enfoque puesto en resultados y métricas de negocio</li>
+        </ul>
+        <a class="btn btn-p" href="#contacto" data-mag data-c>Agendar una reunión →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VALUES ═════════════════════════════════════════════════ -->
+<section class="sec" id="valores">
+  <div class="w">
+    <div class="sc" data-r>
+      <p class="ey ey-c">Valores que guían nuestra acción</p>
+      <h2 class="st">La integridad es la base de nuestra acción.</h2>
+      <p class="sd">Cada valor cobra vida sobre un fundamento común: transparencia, responsabilidad y foco humano.</p>
+    </div>
+    <div class="val-g" data-rs>
+      <article class="val"><div class="vn">01</div><h3>Confianza</h3><p>Relaciones sólidas basadas en honestidad, transparencia y justicia.</p></article>
+      <article class="val"><div class="vn">02</div><h3>Innovación</h3><p>Co-creamos una nueva realidad organizacional con cada cliente.</p></article>
+      <article class="val"><div class="vn">03</div><h3>Honestidad</h3><p>Transparencia y sinceridad porque la verdad construye confianza.</p></article>
+      <article class="val"><div class="vn">04</div><h3>Pasión</h3><p>Disfrutamos lo que hacemos y lo transmitimos en cada interacción.</p></article>
+      <article class="val"><div class="vn">05</div><h3>Excelencia</h3><p>Nos impulsa a estar siempre a la altura de las exigencias del cliente.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TEAM ═══════════════════════════════════════════════════ -->
+<section class="sec" id="equipo" style="background:var(--bg1)">
+  <div class="w">
+    <div class="sc" data-r>
+      <p class="ey ey-c">Expertos apasionados por el cambio</p>
+      <h2 class="st">Un equipo multidisciplinar, cercano y orientado a resultados.</h2>
+      <p class="sd">Combinamos experiencia corporativa con visión innovadora para acompañar cada organización desde el diagnóstico hasta la mejora continua.</p>
+    </div>
+    <div class="team-g" data-rs>
+      <a class="tc" href="https://www.linkedin.com/in/martinponcio/" target="_blank" rel="noopener" aria-label="Martín Poncio en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_martin_poncio.webp" alt="Martín Poncio" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Martín Poncio</h3><p>Director General · Consultor · Coach</p><span class="tc-dept">Consultoría / Dirección</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/guillermina-poncio-371129239/" target="_blank" rel="noopener" aria-label="Guillermina Poncio en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_guillermina_poncio.webp" alt="Guillermina Poncio" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Guillermina Poncio</h3><p>Customer Experience Manager</p><span class="tc-dept">Consultoría / CX</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/silvinadagum/" target="_blank" rel="noopener" aria-label="Silvina Dagum en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_silvina_dagum.webp" alt="Silvina Dagum" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Silvina Dagum</h3><p>Coordinadora de Selección</p><span class="tc-dept">Selección</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/pedro-marc%C3%B3n-9761813b8/" target="_blank" rel="noopener" aria-label="Pedro Marcón en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_pedro_marcon.webp" alt="Pedro Marcón" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Pedro Marcón</h3><p>Representante Comercial</p><span class="tc-dept">Comercial</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/matias-velez-consultor/" target="_blank" rel="noopener" aria-label="Matías Vélez en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_matias_velez.webp" alt="Matías Vélez" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Matías Vélez</h3><p>Consultor · Formación Continua</p><span class="tc-dept">Consultoría / Formación</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/lucrecia-lara-iriso" target="_blank" rel="noopener" aria-label="Lucrecia Iriso en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_lucrecia_iriso.webp" alt="Lucrecia Iriso" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Lucrecia Iriso</h3><p>Consultora</p><span class="tc-dept">Consultoría</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/maria-candelaria-centeno-ferrer-959565180/" target="_blank" rel="noopener" aria-label="Candelaria Centeno en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_candelaria_centeno.webp" alt="Candelaria Centeno" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Candelaria Centeno</h3><p>Key Account · Selección</p><span class="tc-dept">Selección</span></div>
+      </a>
+      <a class="tc" href="https://www.linkedin.com/in/mcarocaceres/" target="_blank" rel="noopener" aria-label="Carolina Cáceres en LinkedIn" data-c>
+        <div class="tc-img"><img src="assets/img/team/equipo_carolina_caceres.webp" alt="Carolina Cáceres" loading="lazy"><div class="tc-ov"></div><span class="li-tag" aria-hidden="true">LinkedIn ↗</span></div>
+        <div class="tc-info"><h3>Carolina Cáceres</h3><p>Key Account · Formación</p><span class="tc-dept">Selección / Formación</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ════════════════════════════════════════════════ -->
+<section class="sec contact" id="contacto">
+  <div class="w">
+    <div class="contact-hd" data-r>
+      <p class="ey ey-c">Hablemos sobre cómo transformar tu organización</p>
+      <h2 class="st">Contanos el desafío. Diseñamos el camino.</h2>
+      <p class="sd">Nuestro equipo está listo para escucharte, entender tu desafío y proponerte el camino más efectivo.</p>
+      <div class="c-ctas">
+        <a class="btn btn-wa" href="https://wa.me/5493518024296" target="_blank" rel="noopener" data-mag data-c>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Contactar por WhatsApp
+        </a>
+        <a class="btn btn-g" href="#proceso" data-mag data-c>Explorar metodologías</a>
+      </div>
+    </div>
+    <div class="cc-g" data-rs>
+      <article class="cc" data-tilt>
+        <span class="cc-tag">Comercial</span>
+        <h3>Pedro Marcón</h3>
+        <p>Representante Comercial</p>
+        <a href="tel:+543518024296">+54 351 802-4296</a>
+        <a class="wa-s" href="https://wa.me/5493518024296" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Enviar WhatsApp</a>
+      </article>
+      <article class="cc" data-tilt>
+        <span class="cc-tag">Formación</span>
+        <h3>Matías Vélez</h3>
+        <p>Consultor · Resp. Formación Continua</p>
+        <a href="tel:+543513192675">+54 351 319-2675</a>
+        <a class="wa-s" href="https://wa.me/5493513192675" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Enviar WhatsApp</a>
+      </article>
+      <article class="cc" data-tilt>
+        <span class="cc-tag">Experiencia</span>
+        <h3>Guillermina Poncio</h3>
+        <p>Customer Experience Manager</p>
+        <a href="tel:+543518079516">+54 351 807-9516</a>
+        <a class="wa-s" href="https://wa.me/5493518079516" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Enviar WhatsApp</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer class="foot">
+  <div class="w foot-g">
+    <div class="foot-brand">
+      <svg viewBox="0 0 302 78" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Poncio" style="height:34px;width:auto;display:block">
+        <rect x="0"  y="40" width="9"  height="38" rx="4.5" fill="#552664"/>
+        <circle cx="17.5" cy="31.5" r="4.5" fill="#653387"/>
+        <rect x="13" y="36" width="9"  height="42" rx="4.5" fill="#653387"/>
+        <circle cx="30.5" cy="53" r="4"   fill="#430088"/>
+        <rect x="26" y="57" width="9"  height="21" rx="4.5" fill="#430088"/>
+        <rect x="40" y="55" width="9"  height="23" rx="4.5" fill="#072a96"/>
+        <circle cx="57.5" cy="40" r="4.5" fill="#2670ca"/>
+        <rect x="53" y="44" width="9"  height="34" rx="4.5" fill="#2670ca"/>
+        <circle cx="71.5" cy="10" r="5.5" fill="#4e7cdd"/>
+        <rect x="66" y="15" width="11" height="63" rx="5.5" fill="#4e7cdd"/>
+        <rect x="81" y="24" width="9"  height="54" rx="4.5" fill="#4cabd5"/>
+        <rect x="94" y="44" width="9"  height="34" rx="4.5" fill="#82c7e6"/>
+        <text x="117" y="67" font-family="'Bebas Neue',Impact,sans-serif" font-size="52" letter-spacing="3" class="foot-text">PONCIO</text>
+      </svg>
+      <p>Innovación en la Gestión de Talentos.</p>
+      <div class="socials" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/ponciosa/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/poncio.sa"  target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.linkedin.com/in/martinponcio/" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+      </div>
+    </div>
+    <div class="fc">
+      <h3>Navegación</h3>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#equipo">Equipo</a>
+    </div>
+    <div class="fc">
+      <h3>Servicios</h3>
+      <a href="#servicios">Selección de Talento</a>
+      <a href="#servicios">Consultoría Organizacional</a>
+      <a href="#servicios">Formación Continua</a>
+    </div>
+    <div class="fc">
+      <h3>Contacto</h3>
+      <p>Río de Janeiro 1735, Torre 2, Of. 6, Córdoba, Argentina.</p>
+      <a href="mailto:info@poncio.com.ar">info@poncio.com.ar</a>
+      <a href="tel:+543515486991">+54 351 5486 991</a>
+    </div>
+  </div>
+  <div class="w foot-bt">
+    <span>© 2026 Poncio. Todos los derechos reservados.</span>
+    <span>Privacidad · Términos · Cookies</span>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a class="wa-fab" href="https://wa.me/5493518024296" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" data-c>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  WhatsApp
+</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
