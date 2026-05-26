@@ -101,10 +101,11 @@ body::after{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
 
-/* Logo SVG wordmark */
-.logo-mark{height:46px;width:auto;display:block;overflow:visible !important;max-width:none}
-.logo-text{fill:#fff}
-.foot-text{fill:rgba(228,236,248,.85)}
+/* Logo imagen + wordmark */
+.logo-combo{display:flex;align-items:center;gap:10px}
+.logo-iso{height:42px;width:auto;display:block;object-fit:contain}
+.logo-word{font-family:'Bebas Neue',Impact,sans-serif;font-size:2rem;letter-spacing:.08em;color:#fff;line-height:1}
+.foot-brand .logo-word{color:rgba(228,236,248,.85)}
 
 /* Nav links (desktop) */
 .nav-links{display:flex;align-items:center;gap:clamp(18px,3vw,40px)}
