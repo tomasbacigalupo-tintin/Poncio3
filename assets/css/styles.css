@@ -645,6 +645,61 @@ body::after{
 .wa-fab:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(37,211,102,.4)}
 .wa-fab svg{width:20px;height:20px;flex-shrink:0}
 
+/* ═══ SERVICES CAROUSEL ══════════════════════════ */
+.srv-carousel{
+  position:relative;
+  margin-top:clamp(44px,6vw,68px);
+  padding:0 68px
+}
+.srv-viewport{overflow:hidden}
+.srv-track{
+  display:flex;gap:14px;
+  transition:transform .55s var(--ease);
+  will-change:transform
+}
+.srv-track .srv{
+  flex:0 0 calc((100% - 28px) / 3);
+  min-width:0
+}
+.srv-prev,
+.srv-next{
+  position:absolute;top:50%;
+  transform:translateY(calc(-50% - 18px));
+  width:54px;height:54px;
+  border-radius:999px;
+  border:2px solid var(--c1);
+  background:rgba(76,171,213,.1);
+  color:var(--c1);
+  cursor:pointer;z-index:10;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .22s ease,color .22s ease,transform .22s var(--ease),box-shadow .22s ease
+}
+.srv-prev{left:0}
+.srv-next{right:0}
+.srv-prev:hover,
+.srv-next:hover{
+  background:var(--c1);color:#000;
+  box-shadow:0 8px 28px rgba(76,171,213,.4);
+  transform:translateY(calc(-50% - 18px)) scale(1.1)
+}
+.srv-prev:disabled,
+.srv-next:disabled{opacity:.28;cursor:not-allowed;pointer-events:none}
+.srv-dots{
+  display:flex;justify-content:center;align-items:center;
+  gap:8px;margin-top:28px
+}
+.srv-dot{
+  width:8px;height:8px;border-radius:999px;
+  border:none;background:rgba(76,171,213,.25);
+  cursor:pointer;padding:0;
+  transition:background .22s ease,width .3s var(--ease)
+}
+.srv-dot.active{background:var(--c1);width:26px}
+
+/* ─── Portal Empleo nav link ─────────────────── */
+.nl-portal{color:var(--c1)!important}
+.nl-portal::after{background:var(--c1)}
+
 /* ═══ RESPONSIVE ══════════════════════════════════ */
 @media(max-width:1100px){
   .hero-grid{grid-template-columns:1fr}
@@ -653,6 +708,8 @@ body::after{
   .about-g,.why-g{grid-template-columns:1fr}
   .pillars{grid-template-columns:repeat(2,1fr)}
   .srv-g{grid-template-columns:repeat(2,1fr)}
+  .srv-carousel{padding:0 54px}
+  .srv-track .srv{flex:0 0 calc((100% - 14px) / 2)}
   .val-g{grid-template-columns:repeat(3,1fr)}
   .team-g{grid-template-columns:repeat(3,1fr)}
   .cc-g{grid-template-columns:repeat(2,1fr)}
@@ -692,6 +749,8 @@ body::after{
   .pillars,.srv-g,.val-g,.team-g,.cc-g,.why-cards{grid-template-columns:1fr}
   .p-hero{grid-column:auto}
   .wc:nth-child(2),.wc:nth-child(3),.wc:nth-child(2):hover,.wc:nth-child(3):hover{transform:none}
+  .srv-carousel{padding:0 40px}
+  .srv-track .srv{flex:0 0 100%}
   .foot-g{grid-template-columns:1fr}
   .foot-bt{flex-direction:column}
 }

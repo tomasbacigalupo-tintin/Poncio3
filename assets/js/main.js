@@ -176,4 +176,68 @@
     });
   }, { rootMargin: '-38% 0px -38% 0px' });
   document.querySelectorAll('section[id]').forEach(s => ao.observe(s));
+
+  /* ─── Services Carousel ──────────────────────────────────── */
+  (() => {
+    const carousel = document.querySelector('.srv-carousel');
+    if (!carousel) return;
+    const track    = carousel.querySelector('.srv-track');
+    const viewport = carousel.querySelector('.srv-viewport');
+    const prevBtn  = carousel.querySelector('.srv-prev');
+    const nextBtn  = carousel.querySelector('.srv-next');
+    const dotsEl   = carousel.querySelector('.srv-dots');
+    const cards    = Array.from(track.querySelectorAll('.srv'));
+    let currentPage = 0;
+
+    const getPerPage = () => {
+      if (window.innerWidth <= 720)  return 1;
+      if (window.innerWidth <= 1100) return 2;
+      return 3;
+    };
+    const totalPages = () => Math.ceil(cards.length / getPerPage());
+
+    const buildDots = () => {
+      dotsEl.innerHTML = '';
+      const n = totalPages();
+      for (let i = 0; i < n; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'srv-dot' + (i === 0 ? ' active' : '');
+        btn.setAttribute('aria-label', 'Página ' + (i + 1));
+        btn.setAttribute('role', 'tab');
+        btn.addEventListener('click', () => goToPage(i));
+        dotsEl.appendChild(btn);
+      }
+    };
+
+    const goToPage = page => {
+      const pp    = getPerPage();
+      const total = totalPages();
+      currentPage = Math.max(0, Math.min(page, total - 1));
+      const gap   = 14;
+      const cw    = cards[0].offsetWidth;
+      const isLastPartial = cards.length % pp !== 0 && currentPage === total - 1;
+      const offset = isLastPartial
+        ? (cards.length - pp) * (cw + gap)
+        : currentPage * pp * (cw + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+      dotsEl.querySelectorAll('.srv-dot').forEach((d, i) => d.classList.toggle('active', i === currentPage));
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = currentPage === total - 1;
+    };
+
+    prevBtn.addEventListener('click', () => goToPage(currentPage - 1));
+    nextBtn.addEventListener('click', () => goToPage(currentPage + 1));
+
+    buildDots();
+    goToPage(0);
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        buildDots();
+        goToPage(Math.min(currentPage, totalPages() - 1));
+      }, 120);
+    });
+  })();
 })();
