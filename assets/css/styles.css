@@ -102,7 +102,7 @@ body::after{
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
 
 /* Logo SVG wordmark */
-.logo-mark{height:46px;width:auto;display:block;overflow:visible !important}
+.logo-mark{height:46px;width:auto;display:block;overflow:visible !important;max-width:none}
 .logo-text{fill:#fff}
 .foot-text{fill:rgba(228,236,248,.85)}
 
@@ -766,17 +766,3 @@ body::after{
   .h-title .w-inner,.h-sub,.h-desc,.h-ctas,.h-proof,.h-stat{animation:none;opacity:1;transform:none}
 }
 
-a[aria-label*="Luciano"] .tc-img {
-  background: #0c1020;
-}
-a[aria-label*="Luciano"] .tc-img img {
-  filter: brightness(0.88) contrast(1.05);
-}
-a[aria-label*="Luciano"] .tc-ov {
-  background: radial-gradient(
-    ellipse at 50% 50%,
-    rgba(6,8,15,0.0)  35%,
-    rgba(6,8,15,0.55) 68%,
-    rgba(6,8,15,0.92) 100%
-  ) !important;
-}
