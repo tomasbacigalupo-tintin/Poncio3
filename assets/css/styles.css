@@ -102,7 +102,7 @@ body::after{
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
 
 /* Logo SVG wordmark */
-.logo-mark{height:40px;width:auto;display:block;overflow:visible}
+.logo-mark{height:46px;width:auto;display:block;overflow:visible}
 .logo-text{fill:#fff}
 .foot-text{fill:rgba(228,236,248,.85)}
 
@@ -766,11 +766,22 @@ body::after{
   .h-title .w-inner,.h-sub,.h-desc,.h-ctas,.h-proof,.h-stat{animation:none;opacity:1;transform:none}
 }
 
-/* Luciano Molina — integrar foto con fondo claro al diseño oscuro */
-a[aria-label*="Luciano"] .tc-img img {
-  mix-blend-mode: luminosity;
-  filter: brightness(0.75) contrast(1.15);
-}
 a[aria-label*="Luciano"] .tc-img {
   background: #06080f;
+}
+a[aria-label*="Luciano"] .tc-img img {
+  filter: brightness(0.88);
+}
+a[aria-label*="Luciano"] .tc-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(6,8,15,0.35) 0%,
+    rgba(6,8,15,0.0) 40%,
+    rgba(6,8,15,0.45) 100%
+  );
+  border-radius: inherit;
+  pointer-events: none;
 }
