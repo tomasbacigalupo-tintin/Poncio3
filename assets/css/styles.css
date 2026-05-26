@@ -102,8 +102,8 @@ body::after{
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
 
 /* Logo imagen + wordmark */
-.logo-combo{display:flex;align-items:center;gap:10px}
-.logo-iso{height:42px;width:auto;display:block;object-fit:contain}
+.logo-combo{display:flex;align-items:flex-end;gap:10px;overflow:visible}
+.logo-iso{height:56px;width:auto;display:block;object-fit:contain;overflow:visible}
 .logo-word{font-family:'Bebas Neue',Impact,sans-serif;font-size:2rem;letter-spacing:.08em;color:#fff;line-height:1}
 .foot-brand .logo-word{color:rgba(228,236,248,.85)}
 
