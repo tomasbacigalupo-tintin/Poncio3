@@ -635,7 +635,7 @@ body::after{
 
 /* ─── WhatsApp FAB ────────────────────────────── */
 .wa-fab{
-  position:fixed;right:20px;bottom:120px;z-index:90;
+  position:fixed;right:20px;bottom:180px;z-index:90;
   display:inline-flex;align-items:center;gap:9px;
   padding:13px 18px;border-radius:999px;
   color:#fff;background:linear-gradient(135deg,#25d366,#128c7e);
