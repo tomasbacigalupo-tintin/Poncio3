@@ -205,6 +205,7 @@ body::after{
 [data-rs].in>*:nth-child(6){opacity:1;transform:none;transition-delay:440ms}
 [data-rs].in>*:nth-child(7){opacity:1;transform:none;transition-delay:520ms}
 [data-rs].in>*:nth-child(8){opacity:1;transform:none;transition-delay:600ms}
+[data-rs].in>*:nth-child(n+9){opacity:1;transform:none;transition-delay:680ms}
 
 /* From left */
 [data-r="left"]{transform:translateX(-40px)}
