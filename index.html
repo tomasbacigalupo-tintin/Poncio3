@@ -571,7 +571,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   WhatsApp
 </a>
 
+<!-- Poncio IA — chatbot propio -->
+<button class="bot-fab" id="botFab" aria-label="Abrir chat con Poncio IA" aria-expanded="false" data-c>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3c-4.97 0-9 3.5-9 7.8 0 2.55 1.4 4.82 3.58 6.27L6 21l3.7-1.53c.73.16 1.5.24 2.3.24 4.97 0 9-3.5 9-7.8S16.97 3 12 3z"/><circle cx="8.6" cy="10.6" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="10.6" r="1" fill="currentColor" stroke="none"/><circle cx="15.4" cy="10.6" r="1" fill="currentColor" stroke="none"/></svg>
+</button>
+
+<div class="bot-panel" id="botPanel" aria-hidden="true">
+  <div class="bot-hd">
+    <span>Poncio IA</span>
+    <button class="bot-close" id="botClose" aria-label="Cerrar chat" type="button">&times;</button>
+  </div>
+  <div class="bot-msgs" id="botMsgs">
+    <div class="bot-msg bot-msg-bot">¡Hola! Soy el asistente virtual de Poncio. ¿En qué puedo ayudarte?</div>
+  </div>
+  <form class="bot-form" id="botForm">
+    <input type="text" id="botInput" placeholder="Escribí tu consulta..." autocomplete="off" maxlength="500">
+    <button type="submit" aria-label="Enviar mensaje">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </form>
+</div>
+
 <script src="assets/js/main.js" defer></script>
-<script> (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="vqAECCBkFXmNGKXuE1nea";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})(); </script>
+<script src="assets/js/chatbot.js" defer></script>
 </body>
 </html>
